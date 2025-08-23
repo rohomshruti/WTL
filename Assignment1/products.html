@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('image/background.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .products-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .products-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      padding: 20px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin: 0 auto 20px;
+    }
+
+    .product-card h3 {
+      font-size: 20px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: orange;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      padding: 10px 20px;
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .product-card button:hover {
+      background-color: #27ae60;
+      color: #fff;
+      border-color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="products-section" id="products">
+    <h2>Our <span style="color: green;">Products</span></h2>
+    <div class="product-container">
+
+      <div class="product-card">
+        <img src="image/product-9.JPG" alt="Apple">
+        <h3>Fresh Apple</h3>
+        <p>100/- – 120/-</p>
+        <div class="stars">★★★★★</div>
+        <button>Add To Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/product-10.png" alt="Pineapple">
+        <h3>Fresh Pineapple</h3>
+        <p>50/- – 70/-</p>
+        <div class="stars">★★★★☆</div>
+        <button>Add To Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/product-16.png" alt="Jackfruit">
+        <h3>Fresh Jackfruit</h3>
+        <p>200/- – 250/-</p>
+        <div class="stars">★★★★☆</div>
+        <button>Add To Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/product-15.png" alt="Coriander">
+        <h3>Fresh Coriander</h3>
+        <p>20/- – 45/-</p>
+        <div class="stars">★★★★☆</div>
+        <button>Add To Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/product-12.png" alt="Fenugreek">
+        <h3>Fresh Fenugreek</h3>
+        <p>25/- – 50/-</p>
+        <div class="stars">★★★★☆</div>
+        <button>Add To Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/product-4.png" alt="Cabbage">
+        <h3>Fresh Cabbage</h3>
+        <p>30/- – 50/-</p>
+        <div class="stars">★★★★★</div>
+        <button>Add To Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/product-17.png" alt="Kiwi">
+        <h3>Fresh Kiwi</h3>
+        <p>100/- – 150/-</p>
+        <div class="stars">★★★★★</div>
+        <button>Add To Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/cart-img-1.png" alt="Watermelon">
+        <h3>Fresh Watermelon</h3>
+        <p>50/- – 60/-</p>
+        <div class="stars">★★★★☆</div>
+        <button>Add To Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="image/product-6.png" alt="Avocado">
+        <h3>Fresh Avocado</h3>
+        <p>200/- – 250/-</p>
+        <div class="stars">★★★★★</div>
+        <button>Add To Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
