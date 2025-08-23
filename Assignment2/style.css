@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: url('bg3.png') no-repeat center/cover fixed;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+input, button {
+  padding: 8px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+input {
+  width: 70%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.edit-btn, .delete-btn {
+  color: #fff;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+.edit-btn {
+  background: green;
+}
+
+.delete-btn {
+  background: red;
+}
