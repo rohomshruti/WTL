@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Simple Name Store</title>
+</head>
+<body>
+
+<form>
+    First Name: <input type="text" id="id1" name="id1"><br>
+    Last Name: <input type="text" id="id2" name="id2"><br>
+    <button type="button" id="btn">Submit</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    async function sendData() {
+        let o = {
+            firstName: document.getElementById("id1").value,
+            lastName: document.getElementById("id2").value
+        };
+
+        // Send data to server
+        const response = await fetch("http://localhost/ass3/server.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(o)
+        });
+
+        const data = await response.json();
+        displayData(data);
+    }
+
+    function displayData(data) {
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = `
+            <p>First Name: ${data.firstName}</p>
+            <p>Last Name: ${data.lastName}</p>
+            <p>Message: ${data.message}</p>
+        `;
+    }
+
+    
+    document.getElementById("btn").addEventListener("click", sendData);
+</script>
+
+</body>
+</html>
